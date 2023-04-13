@@ -7,11 +7,11 @@ el.innerHTML = `
 <div id="msgboard"></div>
 `
 const getfbafee = () => {
-    const msgboard = document.querySelector('msgboard')
+    const msgboard = document.querySelector('#msgboard')
     let msg =''
     document.querySelector('kat-table').querySelectorAll('kat-table-row[data-cy]').forEach(
         e => {
-            msg += e.innerText.match(/ASIN:\s(\w{10})/)[1] + ' ' + e.innerText.match(/\$\s*(\d+\.\d+)\sFBA Fee/)[1]
+            msg += e.innerText.match(/ASIN:\s(\w{10})/)[1] + ' ' + e.innerText.match(/\$\s*(\d+\.\d+)\sFBA Fee/)[1] +'<br>'
         }
     )
     msgboard.innerHTML = msg
