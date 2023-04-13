@@ -4,8 +4,8 @@
 // @version      0.2
 // @description  try to take over the world!
 // @author       You
-// @match        *
-// @icon         https://www.google.com/s2/favicons?domain=dyip.cn
+// @match        https://sellercentral.amazon.com/inventoryplanning/manageinventoryhealth*
+// @icon         https://www.google.com/s2/favicons?domain=amazon.com
 // @updateURL    https://dyip.cn:8443/userscripts/template.user.js
 // @downloadURL    https://dyip.cn:8443/userscripts/template.user.js
 // @grant        none
