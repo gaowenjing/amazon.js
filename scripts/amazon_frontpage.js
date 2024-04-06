@@ -54,6 +54,7 @@ bottom: 0px;
     <a target="_blank" rel="noreferrer" href="https://${location.host}/feedback-manager/index.html#/">feedback</a>
     <a target="_blank" rel="noreferrer" href="https://${location.host}/brand-customer-reviews/ref=xx_crvws_dnav_xx?includeDone=true">reviews</a>
     <a target="_blank" rel="noreferrer" href="https://${location.host}/payments/reports/custom/request?ref_=xx_report_ttab_dash">date range report</a>
+    <a target="_blank" rel="noreferrer" href="https://${location.host}/payments/reports-repository">new date range report</a>
     <button id="openalllink">open all</button>
     <label>goto order: <input name="orderid"></label><button id="gotoorder">go</button>
     <label>goto asin: <input name="gotoasin"></label><button id="gotoasin">go</button>
