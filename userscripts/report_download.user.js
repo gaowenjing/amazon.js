@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         auto download report
-// @namespace    https://github.com/gaowenjing/
+// @namespace    https://dyip.cn/
 // @version      0.3
 // @description  auto downlaod report
 // @author       You
@@ -8,12 +8,12 @@
 // @match        https://sellercentral-europe.amazon.com/reportcentral/*
 // @icon         https://www.google.com/s2/favicons?domain=amazon.com
 // @grant        none
-// @updateURL    https://github.com/gaowenjing/amazon.js/raw/main/userscripts/report_download.user.js
-// @downloadURL  https://github.com/gaowenjing/amazon.js/raw/main/userscripts/report_download.user.js
+// @updateURL    https://dyip.cn/userscripts/report_download.user.js
+// @downloadURL  https://dyip.cn/userscripts/report_download.user.js
 // ==/UserScript==
 
 const sc = document.createElement('script')
 
-sc.setAttribute('src', 'https://github.com/gaowenjing/amazon.js/raw/main/scripts/report_download.js')
+sc.setAttribute('src', 'https://dyip.cn/scripts/report_download.js')
 
 document.body.append(sc)

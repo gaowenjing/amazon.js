@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         order to messager
-// @namespace    https://github.com/gaowenjing/
+// @namespace    https://dyip.cn/
 // @version      0.1
 // @description  order page redirect to message
 // @author       You
