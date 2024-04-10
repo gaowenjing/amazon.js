@@ -1,22 +1,22 @@
 // ==UserScript==
 // @name         order to messager
-// @namespace    http://tampermonkey.net/
+// @namespace    https://github.com/gaowenjing/
 // @version      0.1
-// @description  try to take over the world!
+// @description  order page redirect to message
 // @author       You
 // @match        https://sellercentral.amazon.com/orders-v3/order/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=amazon.com
 // @grant        none
 // ==/UserScript==
 
-(function() {
+(function () {
     'use strict';
     let el = document.createElement('span');
     el.classList.add('a-button');
     el.innerHTML = `
     <a class="a-button-text" role="button">message</a>
     `
-document.querySelector("#MYO-app").before(el)
+    document.querySelector("#MYO-app").before(el)
     // Your code here...
     el.querySelector('a').onclick = function (e) {
         //e.preventDefault();

@@ -1,4 +1,4 @@
-const sleep = async ms=>new Promise(res=>setTimeout(res, ms))
+const sleep = async ms => new Promise(res => setTimeout(res, ms))
 
 // DAILY WEELKY MONTHLY
 function setrangetype(rangetype) {
@@ -12,7 +12,7 @@ function setrangetype(rangetype) {
 function setrange(rangestartdate) {
     document.querySelector("#dashboard-filter-periodPicker input").click()
 }
-window.addEventListener('beforeunload', function(event) {
+window.addEventListener('beforeunload', function (event) {
     event.stopImmediatePropagation();
 });
 async function startdownload() {

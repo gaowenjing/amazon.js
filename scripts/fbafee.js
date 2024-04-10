@@ -1,4 +1,4 @@
-let el = document.createElement('div') 
+let el = document.createElement('div')
 
 document.body.prepend(el)
 el.style.position = 'fixed'
@@ -15,18 +15,18 @@ document.querySelector('#msgboard').ondblclick = () => {
     textarea.select()
     document.execCommand('copy')
 }
-let  getfbafee = () => {
+let getfbafee = () => {
     const msgboard = document.querySelector('#msgboard')
     const debugmsg = document.querySelector('#debugmsg')
-    let msg =''
+    let msg = ''
     document.querySelector('kat-table').querySelectorAll('kat-table-row[data-cy]').forEach(
         e => {
             //console.log(e)
-try {
-            msg += e.innerText.match(/ASIN:\s(\w{10})/)[1] + ' ' + e.innerText.match(/\$\s*(\d+\.\d+)\s(FBA Fee|亚马逊物流费用)/)[1] +'\n'
-} catch (err) {
-    debugmsg.innerHTML += err
-}
+            try {
+                msg += e.innerText.match(/ASIN:\s(\w{10})/)[1] + ' ' + e.innerText.match(/\$\s*(\d+\.\d+)\s(FBA Fee|亚马逊物流费用)/)[1] + '\n'
+            } catch (err) {
+                debugmsg.innerHTML += err
+            }
         }
     )
     msgboard.innerHTML = msg

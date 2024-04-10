@@ -21,7 +21,7 @@ const getreportId = (reportsubmitId) => {
 
     // custom
     let custom = new Date(document.querySelector('input[name=custommonth]').value)
-    custom.setMonth(custom.getMonth()+1)
+    custom.setMonth(custom.getMonth() + 1)
     custom.setDate(0)
     let custommonthstartdate = custom.getFullYear() + '/' + ('0' + (custom.getMonth() + 1)).slice(-2) + '/01'
     let custommonthenddate = custom.toISOString().split('T')[0].replaceAll('-', '/')
