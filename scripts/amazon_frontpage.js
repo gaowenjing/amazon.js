@@ -43,9 +43,6 @@ bottom: 0px;
     }
 }
 
-// nav
-// <a target="_blank" href="https://${location.host}/business-reports/ref=xx_sitemetric_dnav_xx">business-report</a>
-// <a target="_blank" href="https://${location.host}/reportcentral/ref=xx_fbareports_dnav_xx">reportcentral</a>
 {
     const el = document.createElement('div')
     document.body.prepend(el)
@@ -53,10 +50,10 @@ bottom: 0px;
     <a target="_blank" rel="noreferrer" href="https://${location.host}/merchandising-new/?merchandisingType=BEST_DEAL%2cLIGHTNING_DEAL&selectedStatusFilters=running%2cended&pageNumber=1&pageSize=50&sortColumn=END_DATE&sortOrder=DESC#default">deal list</a>
     <a target="_blank" rel="noreferrer" href="https://${location.host}/feedback-manager/index.html#/">feedback</a>
     <a target="_blank" rel="noreferrer" href="https://${location.host}/brand-customer-reviews/ref=xx_crvws_dnav_xx?includeDone=true">reviews</a>
-    <a target="_blank" rel="noreferrer" href="https://${location.host}/payments/reports/custom/request?ref_=xx_report_ttab_dash">date range report</a>
-    <a target="_blank" rel="noreferrer" href="https://${location.host}/payments/reports-repository">new date range report</a>
+    <a target="_blank" rel="noreferrer" href="https://${location.host}/payments/reports-repository">date range report</a>
     <button id="openalllink">open all</button>
     <label>goto order: <input name="orderid"></label><button id="gotoorder">go</button>
+    <label>goto mcf order: <input name="mcforderid"></label><button id="gotomcforder">go</button>
     <label>goto asin: <input name="gotoasin"></label><button id="gotoasin">go</button>
     <div id="performance"></div></div>
     `
@@ -75,6 +72,11 @@ bottom: 0px;
     el.querySelector('#gotoorder').onclick = function () {
         let orderid = el.querySelector('input[name=orderid]').value
         window.open(`https://${location.host}/orders-v3/order/${orderid}`)
+    }
+
+    el.querySelector('#gotomcforder').onclick = function () {
+        let orderid = el.querySelector('input[name=mcforderid]').value
+        window.open(`https://${location.host}/mcf/orders/order-details?orderID=${orderid}&_encoding=UTF8`)
     }
 
     el.querySelector('#gotoasin').onclick = function () {
